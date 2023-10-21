@@ -9,19 +9,20 @@
     <script defer src="app.js"></script>
     <title>Welcome!</title>
 </head>
-<body onload="posts()">
+<body onload="comments()">
 
-    <h1 class="text-center text-capitalize py-4">fetching users posts with API</h1>
+    <h1 class="text-center text-capitalize py-4">fetching users comments with post's API</h1>
 
 
     <div class="container">
         <table class="table text-center table-bordered table-striped">
           <thead class="table-primary">
             <tr>
-                <th scope="col">User #</th>
-                <th scope="col">Title</th>
-                <th scope="col">Desc</th>
+                <th scope="col">Comment #</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
                 <th scope="col">Comments</th>
+                <th scope="col">Link</th>
               </tr>
           </thead>
           <tbody id="post_table_body">
