@@ -9,9 +9,9 @@
     <script defer src="app.js"></script>
     <title>Welcome!</title>
 </head>
-<body onload="users()">
+<body onload="posts()">
 
-    <h1 class="text-center text-capitalize py-4">fetching users data with API</h1>
+    <h1 class="text-center text-capitalize py-4">fetching users posts with API</h1>
 
 
     <div class="container">
@@ -19,14 +19,12 @@
           <thead class="table-primary">
             <tr>
                 <th scope="col">User #</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone Number</th>
-                <th scope="col">Email</th>
-                <th scope="col">Website</th>
-                <th scope="col">Posts</th>
+                <th scope="col">Title</th>
+                <th scope="col">Desc</th>
+                <th scope="col">Comments</th>
               </tr>
           </thead>
-          <tbody id="user_table_body">
+          <tbody id="post_table_body">
             
           </tbody>
         </table>

@@ -1,14 +1,12 @@
-.spinner {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+#spinner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
   }
   
-  .spinner div {
+  #spinner div {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -17,61 +15,61 @@
     animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
   }
   
-  .spinner div:nth-child(1) {
+  #spinner div:nth-child(1) {
     --delay: 0.1;
     --rotation: 36;
     --translation: 150;
   }
   
-  .spinner div:nth-child(2) {
+  #spinner div:nth-child(2) {
     --delay: 0.2;
     --rotation: 72;
     --translation: 150;
   }
   
-  .spinner div:nth-child(3) {
+  #spinner div:nth-child(3) {
     --delay: 0.3;
     --rotation: 108;
     --translation: 150;
   }
   
-  .spinner div:nth-child(4) {
+  #spinner div:nth-child(4) {
     --delay: 0.4;
     --rotation: 144;
     --translation: 150;
   }
   
-  .spinner div:nth-child(5) {
+  #spinner div:nth-child(5) {
     --delay: 0.5;
     --rotation: 180;
     --translation: 150;
   }
   
-  .spinner div:nth-child(6) {
+  #spinner div:nth-child(6) {
     --delay: 0.6;
     --rotation: 216;
     --translation: 150;
   }
   
-  .spinner div:nth-child(7) {
+  #spinner div:nth-child(7) {
     --delay: 0.7;
     --rotation: 252;
     --translation: 150;
   }
   
-  .spinner div:nth-child(8) {
+  #spinner div:nth-child(8) {
     --delay: 0.8;
     --rotation: 288;
     --translation: 150;
   }
   
-  .spinner div:nth-child(9) {
+  #spinner div:nth-child(9) {
     --delay: 0.9;
     --rotation: 324;
     --translation: 150;
   }
   
-  .spinner div:nth-child(10) {
+  #spinner div:nth-child(10) {
     --delay: 1;
     --rotation: 360;
     --translation: 150;
@@ -88,3 +86,18 @@
   }
 
   /* spinner end */
+
+
+#loader-cont{
+  display: none;
+}
+#loader-cont{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
