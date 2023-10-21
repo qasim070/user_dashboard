@@ -20,7 +20,10 @@ function users() {
         });
         document.getElementById("user_table_body").innerHTML = usersData;
       })
-      .catch((Error) => console.error(Error));
+      .catch((error) => {
+        console.error(error);
+        loader.classList.add('disable-loader');
+      });
   }
   
 
@@ -50,7 +53,10 @@ function posts() {
         });
         document.getElementById("post_table_body").innerHTML = postData;
       })
-      .catch((Error) => console.error(Error));
+      .catch((error) => {
+        console.error(error);
+        loader.classList.add('disable-loader');
+      });
   }
   
 
@@ -76,10 +82,14 @@ function comments() {
             <td><button class="btn btn-primary">  <a href="./index.html" class="text-white">Back to Home</a></button></td>
           </tr>`;
           loader.classList.add('disable-loader');
-
+          
         });
         document.getElementById("post_table_body").innerHTML = postData;
-      })
-      .catch((Error) => console.error(Error));
+    })
+    .catch((error) => {
+        console.error(error);
+        loader.classList.add('disable-loader');
+      });
+    
   }
   
